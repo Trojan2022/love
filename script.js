@@ -1,4 +1,4 @@
-const imgList=[{id:'img/1.jpg'},{id:'img/2.jpg'},{id:'img/3.jpg'},{id:'img/4.jpg'},{id:'img/5.jpg'},{id:'img/6.jpg'},{id:'img/7.jpg'},{id:'img/8.jpg'},{id:'img/9.jpg'},{id:'img/10.jpg'},{id:'img/11.jpg'},{id:'img/12.jpg'},{id:'img/13.jpg'},{id:'img/14.jpg'},{id:'img/15.jpg'},{id:'img/16.jpg'},{id:'img/17.jpg'}];
+const imgList=[{id:'1.jpg'},{id:'2.jpg'},{id:'3.jpg'},{id:'4.jpg'},{id:'5.jpg'},{id:'6.jpg'},{id:'7.jpg'},{id:'8.jpg'},{id:'9.jpg'},{id:'10.jpg'},{id:'11.jpg'},{id:'12.jpg'},{id:'13.jpg'},{id:'14.jpg'},{id:'15.jpg'},{id:'16.jpg'},{id:'17.jpg'}];
 const firstBtn=document.querySelector('.button-85');
 const changeAnna=document.querySelector('.changeAnna');
 const changeDanny=document.querySelector('.changeDanny');
