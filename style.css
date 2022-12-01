@@ -1,0 +1,230 @@
+
+body{
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-color: #262626;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+h3{
+  text-shadow: 0 0 1px yellow;
+  font-weight: bolder;
+    animation: maketextgrow 10s linear infinite;
+  
+}
+
+.first{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.heart-with-gradient{
+  margin-bottom: 50px;
+}
+
+.firstBtn{
+  top: 0;
+  position: relative;
+  font-size: 40px;
+  font-weight: bolder;
+  border: 2px solid lightgreen;
+  border-radius: 70px;
+  background: #44b370;
+  box-shadow: -23px -23px 66px #3ea366,
+  23px 23px 66px #4ac37a;
+  bottom:0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  
+}
+
+.second{
+  display: none;
+  position: relative;
+  transition: top 2s ease;
+}
+
+.imageHolder{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+}
+
+.imgtext{
+  font-size: 1.5rem;
+  text-align: center;
+  color:black;
+  font-weight: bold;
+  animation: maketextgrow 10s ease-in-out infinite;
+}
+
+.love{
+  width: 150px;
+  height: 300px;
+  border:5px solid black;
+  box-shadow: 0 0 8px white;
+  border-radius:20px;
+}
+
+.changeAnna, .changeDanny{
+  color: black;
+  text-shadow: 0 0 1px white;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  user-select: none;
+  outline:none;
+  border-radius: 10px 10px 100px 10px;;
+  background-color:black;
+  border: 1px solid #f99a9a;
+  box-shadow: 0 0 white;
+  animation: maketextgrow 10s ease-in-out infinite;
+}
+.changeDanny{
+  border-radius: 10px 10px 10px 100px;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color:red;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 30s linear infinite;
+  transition: opacity 0.9s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.heart-with-gradient {
+  width: 100px;
+  display: inline-block;
+  -webkit-mask:
+    radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left,
+    radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right,
+    linear-gradient(to bottom left, red 43%, transparent 43%) bottom left,
+    linear-gradient(to bottom right, red 43%, transparent 43%) bottom right;
+  -webkit-mask-size: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  mask:
+    radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left,
+    radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right,
+    linear-gradient(to bottom left, red 43%, transparent 43%) bottom left,
+    linear-gradient(to bottom right, red 43%, transparent 43%) bottom right;
+  mask-size: 50% 50%;
+  mask-repeat: no-repeat;
+  background: linear-gradient(red, blue);
+
+}
+
+.heart-with-gradient::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+a{
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 50px 100px;
+  padding: 10px 40px;
+  border: 1px solid #f99a9a;
+   color: black;
+   border-radius: 50px;
+   animation: maketextgrow 10s ease-in-out infinite;
+   background-color: black;
+}
+
+@keyframes maketextgrow{
+  0%{
+    text-shadow: 0 0 1px white;
+  }
+  20%{
+    text-shadow: 0 0 2px white;
+  }
+  40%{
+    text-shadow: 0 0 3px gold;
+  }
+  60%{
+    text-shadow: 0 0 4px gold;
+  }
+  80%{
+    text-shadow: 0 0 5px white;
+  }
+  100%{
+    text-shadow: 0 0 6x gold;
+  }
+}

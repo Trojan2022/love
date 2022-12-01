@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fun PlayGround</title>
+  <style>
+  body{
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-color: deepskyblue;
+    color: black;
+    animation: maketextgrow 10s ease-in-out infinite;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    
+a{
+  text-decoration: none;
+  font-size: 50px;
+  text-align: center;
+  display: inline-block;
+  background-color: black;
+  margin: 30px 100px;
+  padding: 10px;
+  border: 1px solid #f99a9a;
+  box-shadow: -13px -13px 46px black,
+  13px 13px 46px black;
+   color: black;
+   border-radius: 50px;
+}
+@keyframes maketextgrow{
+  0%{
+    text-shadow: 0 0 1px white;
+  }
+  20%{
+    text-shadow: 0 0 2px white;
+  }
+  40%{
+    text-shadow: 0 0 3px gold;
+  }
+  60%{
+    text-shadow: 0 0 4px gold;
+  }
+  80%{
+    text-shadow: 0 0 5px white;
+  }
+  100%{
+    text-shadow: 0 0 6x gold;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <h1>Click and Find, which one you like the most.</h1>
+    <div class="container">
+      <a href="https://www.patatap.com/">1</a>
+      <a href="https://notalwaysright.com/thats-the-way-the-cookie-crumbles-lady/265717/">2</a>
+      <a href="http://www.flashbynight.com/drench/">3</a>
+      <a href="https://riverstyx.com/">4</a>
+      <a href="https://littlealchemy2.com/">5</a>
+      <a href="https://asoftmurmur.com/">6</a>
+    </div>
+</body>
+
+</html>
